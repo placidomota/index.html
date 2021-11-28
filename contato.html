@@ -9,7 +9,7 @@
     <title>Plácido Mota</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
     <a class="navbar-brand" href="index.html">Plácido Mota</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
@@ -34,3 +34,39 @@
     </div>
   </div>
 </nav>
+
+<main>
+    <div class="container mt-3">
+    <div>
+        <h2>Formulário de Contato</h2>
+    </div>
+    <form action="/action_page.php">
+        <div class="mb-3 mt-3">
+        <label for="nome">Nome:</label>
+        <input type="txt" class="form-control" id="nome" placeholder="Insira seu nome" name="nome">
+        </div>
+        <div class="mb-3">
+        <label for="email">E-mail:</label>
+        <input type="email" class="form-control" id="email" placeholder="Insira seu E-mail" name="email">
+        </div>
+        <div class="form-check mb-3">
+        <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Lembrar-me
+        </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+    </div>
+    <div class="container mt-3">
+  <h2>Comentários</h2>
+  <p>Use este campo para deixar seu comentário:</p>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="comment">Comentários:</label>
+      <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+</div>
+
+</main>
